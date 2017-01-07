@@ -1,0 +1,25 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th th:text="#{msgs.headers.name}">Name
+				</th>
+				<th th:text="#{msgs.headers.price}">Price
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="prod : ${allProducts}">
+				<td th:text="${prod.name}">Oranges</td>
+				<td th:text="${#numbers.formatDecimal(prod.price,1,2)}">0.99</td>
+			</tr>
+	</table>
+</body>
+</html>
