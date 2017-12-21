@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author lenovo
+ * @author bob.xiang
  * SpringApplication是Spring Boot框架中描述Spring应用的类，
  * 它的run()方法会创建一个Spring应用上下文（Application Context）。
  * 另一方面它会扫描当前应用类路径上的依赖，例如本例中发现spring-webmvc（由 spring-boot-starter-web传递引入）
