@@ -1,1 +1,7 @@
-# SpringBootDemo  这是我参考网上的学习资料做的一个SpringBoot的Demo
+# SpringBoot框架的学习（一年之后重新维护）
+##环境：
+JDK 9
+<br>SpringBoot 1.5.9
+<br>Maven
+##主要实现功能
+##相关技术点
