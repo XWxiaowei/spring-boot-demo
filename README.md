@@ -12,4 +12,5 @@ JDK 9
 3. 采用thymeleaf作为前端引擎
 4. 数据持久层采用Mybatis
 5. 数据库连接池采用Druid
+##  项目结构简介
 

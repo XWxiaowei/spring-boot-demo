@@ -1,8 +1,7 @@
-package com.jay.spring.boot.mybatis;
+package com.jay.spring.boot.model;
 
 import java.io.Serializable;
 
-@Deprecated
 public class Student implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int id;
