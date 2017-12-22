@@ -1,10 +1,11 @@
-package com.jay.spring_boot.mybatis.xml;
+package com.jay.spring.boot.mybatis.xml;
 
 import java.util.List;
 
-import com.jay.spring_boot.mybatis.Student;
+import com.jay.spring.boot.mybatis.Student;
 import org.apache.ibatis.annotations.Mapper;
 
+@Deprecated
 @Mapper
 public interface StudentMapper {
 

@@ -1,4 +1,4 @@
-package com.jay.spring_boot.controller;
+package com.jay.spring.boot.controller;
 
 import java.util.HashMap;
 import java.util.Map;

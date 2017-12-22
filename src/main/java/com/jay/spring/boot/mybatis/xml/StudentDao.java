@@ -1,16 +1,16 @@
-package com.jay.spring_boot.mybatis.xml;
+package com.jay.spring.boot.mybatis.xml;
 
+import com.jay.spring.boot.mybatis.Student;
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import com.jay.spring_boot.mybatis.Student;
 
 /**
  * @author bob.xiang
  * 功能说明：测试二
  *
  */
+@Deprecated
 @Component  //未指明功能类型的注解
 public class StudentDao {
 	@Autowired

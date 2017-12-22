@@ -1,4 +1,4 @@
-package com.jay.spring_boot.controller;
+package com.jay.spring.boot.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

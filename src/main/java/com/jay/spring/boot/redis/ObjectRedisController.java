@@ -1,4 +1,4 @@
-package com.jay.spring_boot.redis;
+package com.jay.spring.boot.redis;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

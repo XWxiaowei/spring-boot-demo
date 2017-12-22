@@ -1,18 +1,18 @@
-package com.jay.spring_boot.mybatis.xml;
+package com.jay.spring.boot.mybatis.xml;
 
+import com.jay.spring.boot.mybatis.Student;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jay.spring_boot.mybatis.Student;
-
 /**
  * @author bob.xiang
  * @Desc Spring Boot与MyBatis 集成 采用xml的方式
  *
  */
+@Deprecated
 @RestController
 @RequestMapping("/mybatis/xml")
 public class ControllerTestForXML {

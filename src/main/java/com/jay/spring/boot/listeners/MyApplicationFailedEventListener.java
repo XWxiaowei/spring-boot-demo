@@ -1,4 +1,4 @@
-package com.jay.spring_boot.listeners;
+package com.jay.spring.boot.listeners;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
