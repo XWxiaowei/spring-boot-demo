@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 	private static Logger logger=LoggerFactory.getLogger(TestController.class);	
-	@Value(value="${bob.name}")
+//	@Value(value="${bob.name}")
 	private String name;
 	
-	@Value(value="${bob.number}")
+//	@Value(value="${bob.number}")
 	private String number;
 	
 	@RequestMapping("/first")

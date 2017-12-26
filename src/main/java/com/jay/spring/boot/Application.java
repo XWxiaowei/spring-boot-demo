@@ -20,12 +20,12 @@ Spring WebMvc框架会将Servlet容器里收到的HTTP请求根据路径分
 例如上面的代码中http://localhost:8080/根路径就被路由至greeting()方法进行处理。如果访问http://localhost:8080/hello，则会出现404 Not Found错误，因为我们并没有编写任何方法来处理/hello请求。
  */
 @SpringBootApplication
-@RestController
 public class Application {
 	private static Logger logger=LoggerFactory.getLogger(Application.class);
 	public static void main(String[] args) {
-		logger.info("程序启动");
 		SpringApplication.run(Application.class, args);
+		//TODO mybatis没有加载好
+		logger.info("程序启动----success");
 	}
 
 }
