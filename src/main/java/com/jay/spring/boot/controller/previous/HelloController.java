@@ -1,4 +1,4 @@
-package com.jay.spring.boot.controller;
+package com.jay.spring.boot.controller.previous;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
