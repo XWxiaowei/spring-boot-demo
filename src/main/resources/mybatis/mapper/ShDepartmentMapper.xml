@@ -6,13 +6,13 @@
     <result column="dname" property="dname" jdbcType="VARCHAR" />
     <result column="ddesc" property="ddesc" jdbcType="VARCHAR" />
   </resultMap>
-  <insert id="insert" parameterType="com.jay.generator.model.ShDepartment" >
+  <insert id="insert" parameterType="com.jay.spring.boot.model.ShDepartment" >
     insert into sh_department (did, dname, ddesc
       )
     values (#{did,jdbcType=INTEGER}, #{dname,jdbcType=VARCHAR}, #{ddesc,jdbcType=VARCHAR}
       )
   </insert>
-  <update id="updateByPrimaryKey" parameterType="com.jay.generator.model.ShDepartment" >
+  <update id="updateByPrimaryKey" parameterType="com.jay.spring.boot.model.ShDepartment" >
     update sh_department
     set dname = #{dname,jdbcType=VARCHAR},
       ddesc = #{ddesc,jdbcType=VARCHAR}

@@ -16,14 +16,15 @@ import javax.sql.DataSource;
 
 /**
  * @Description 集成myBatis
+ * @author jay.xiang
  */
 @Configuration
 @EnableTransactionManagement
 public class SessionFactoryConfig implements TransactionManagementConfigurer {
 	/** * mybatis 配置路径 */ 
-	private static final String MYBATIS_CONFIG = "classpath:/mybatis/*.xml";
+	private static final String MYBATIS_CONFIG = "classpath:/mybatis/mapper/*.xml";
 	/** * model 配置路径 */ 
-	private static final String TYPE_ALIAS_PACKAGE = "com.aisino.projects.task.model";
+	private static final String TYPE_ALIAS_PACKAGE = "com.jay.spring.boot.model";
 	
 	@Resource(name = "dataSource")
 	private DataSource dataSource;

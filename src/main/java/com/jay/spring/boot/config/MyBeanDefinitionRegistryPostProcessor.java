@@ -31,15 +31,15 @@ public class MyBeanDefinitionRegistryPostProcessor implements BeanDefinitionRegi
 	@Override
 	public void postProcessBeanFactory(ConfigurableListableBeanFactory arg0)
 			throws BeansException {
-		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void postProcessBeanDefinitionRegistry(BeanDefinitionRegistry registry)
 			throws BeansException {
 		logger.info("自定义注册Java Bean");
-		registerBean(registry, "schedulerFactoryBean", org.springframework.scheduling.quartz.SchedulerFactoryBean.class);
+		//TODO
+//		registerBean(registry, "schedulerFactoryBean", org.springframework.scheduling.quartz.SchedulerFactoryBean.class);
 	}
 
 	
