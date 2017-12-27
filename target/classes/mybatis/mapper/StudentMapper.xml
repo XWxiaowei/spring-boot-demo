@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jay.spring.boot.mybatis.xml.StudentMapper">
+	<resultMap type="com.jay.spring.boot.model.Student" id="stuMap">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="scoreSum" column="score_sum" />
+		<result property="scoreAvg" column="score_avg" />
+		<result property="age" column="age" />
+	</resultMap>
+	<select id="selectById" resultMap="stuMap" parameterType="java.lang.Integer">
+		select * from Student
+		where id=#{id}
+	</select>
+	<select id="likeName" resultMap="stuMap" parameterType="java.lang.String"
+		resultType="list">
+		SELECT *
+		FROM Student
+		WHERE NAME LIKE CONCAT('%',#{name},'%')
+	</select>
+
+	<select id="getNameById" resultType="string">
+		SELECT NAME
+		FROM STUDENT
+		WHERE ID = #{id}
+	</select>
+
+</mapper>
