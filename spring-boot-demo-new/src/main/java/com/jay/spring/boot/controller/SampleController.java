@@ -1,5 +1,9 @@
 package com.jay.spring.boot.controller;
 
+import com.jay.spring.boot.config.FooProperties;
+import com.jay.spring.boot.service.MyService;
+import com.jay.spring.boot.service.impl.MyServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -13,20 +17,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @create 2018/4/2 13:54
  */
 @Controller
-@EnableAutoConfiguration
 public class SampleController {
-    @Order
-    private MyBean myBean;
+    @Autowired
+    private MyService myService;
+
     @RequestMapping("/")
     @ResponseBody
     String home() {
-        return "Hello World!";
+        return myService.getProperties();
     }
 
-    public static void main(String[] args) throws Exception {
-//        SpringApplication app = new SpringApplication(SampleController.class);
-//        app.setBannerMode(Banner.Mode.OFF);
-//        app.run(args);
-        SpringApplication.run(SampleController.class, args);
-    }
 }

@@ -1,4 +1,4 @@
-package com.jay.spring.boot.service.impl;
+package com.jay.spring.boot.service;
 
 import com.jay.spring.boot.pagehelper.PageInfo;
 import com.jay.spring.boot.mapper.ShEmployeeMapper;
